@@ -1,0 +1,42 @@
+.bg-img {
+  padding-top: 200px;
+  background-image: linear-gradient(to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9)), url('../images/bg-min.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 1000px;
+  text-transform: uppercase;
+  font-family: $main-font;
+
+  &__descrp {
+    text-transform: capitalize;
+    font-family: $h-font;
+    font-size: 72px;
+    font-weight: 400;
+  }
+
+  &__title {
+    margin-top: 10px;
+    font-size: 150px;
+    font-weight: 700;
+
+    &-fline {
+      display: block;
+    }
+  }
+
+  &__btn {
+    margin-top: 100px;
+    width: 160px;
+    height: 40px;
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $main-font;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: linear-gradient(to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9)), url('../images/bg@2x-min.png');
+  }
+}

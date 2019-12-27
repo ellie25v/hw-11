@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: $main-font;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+
+.container {
+  width: 1202px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 100px;
+  color: #515151;
+
+}
+
+.section-title {
+  font-size: 30px;
+  font-family: $main-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.7;
+
+}
+
+.section-title-incut {
+  font-family: $h-font;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+.section-title-incut::first-letter {
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60px;
+  background-color: $pink-color;
+  margin: 0 auto;
+  vertical-align: bottom;
+  margin-top: 38px;
+}

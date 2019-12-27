@@ -1,0 +1,65 @@
+.main-footer {
+  margin-top: 80px;
+
+  .container {
+    margin-top: 10px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &::before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: rgb(153, 153, 153);
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__incut {
+    font-size: 14px;
+    font-family: $main-font;
+    color: #515151;
+  }
+
+  &-link {
+    font-size: 14px;
+    font-family: $main-font;
+    color: $pink-color;
+    text-decoration: none;
+    display: inline;
+  }
+
+  input[type=email] {
+    border: 1px solid rgb(153, 153, 153);
+    width: 230px;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    text-transform: capitalize;
+    border-right: none;
+  }
+
+  button[type=submit] {
+    width: 150px;
+    background-color: rgb(149, 225, 211);
+    color: white;
+    font-size: 14px;
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+  }
+}
+
+.subscription-form {
+  height: 40px;
+  display: flex;
+}
+

@@ -1,0 +1,71 @@
+.services__list {
+  padding-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 150px;
+
+  &-item {
+    width: 352px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 6px;
+      fill: $main-color;
+    }
+
+    &:first-child::before {
+      background-image: url("../images/icons/icon-alarm.svg");
+    }
+    &:nth-child(2)::before {
+      background-image: url("../images/icons/icon-web.svg");
+  }
+
+    &:nth-child(3)::before {
+      background-image: url("../images/icons/creativity.svg");
+    }
+
+    &:nth-child(4)::before {
+      background-image: url("../images/icons/seo.svg");
+    }
+
+    &:nth-child(5)::before {
+      background-image: url("../images/icons/code.svg");
+    }
+
+    &:last-child::before {
+      background-image: url("../images/icons/digital.svg");
+    }
+
+    &:nth-child(n+4) {
+      margin-top: 90px;
+    }
+  }
+  &-text {
+    width: 270px;
+    text-align: left;
+  }
+  &-descr {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+    padding-top: 12px;
+  
+  }
+  &-title {
+    font-size: 14px;
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}
+
